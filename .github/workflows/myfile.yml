@@ -4,7 +4,7 @@ name: MyWorkflowName
 run-name: ${{ github.actor }} is my run-name
 
 # here we can write anything from: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
-on: [push]
+on: [push, workflow_dispatch]
 
 
 
