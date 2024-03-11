@@ -1,0 +1,9 @@
+name: A callable, reusable workflow
+on:
+  workflow_call:
+
+jobs:
+  say-hi:
+    runs_on: ubuntu-latest
+    steps:
+      - run echo hi
