@@ -21,4 +21,4 @@ jobs:
       - run: echo "This is job two."
 
   execute-workflow-from-another-file-or-even-repo:
-    uses: hotwo123/experimentingWithWorkflowsPublic/.github/workflows/callable.yml
+    uses: hotwo123/experimentingWithWorkflowsPublic/.github/workflows/callable.yml@main
