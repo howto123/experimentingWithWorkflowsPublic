@@ -1,6 +1,7 @@
 name: A callable, reusable workflow
 on:
   workflow_call:
+  workflow_dipatch:
 
 jobs:
   say-hi:
