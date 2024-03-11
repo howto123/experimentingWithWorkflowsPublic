@@ -2,9 +2,12 @@ name: MyWorkflowName
 run-name: ${{ github.actor }} is my run-name
 on: [push]
 jobs:
-  the-name-of-the-job:
+  job-one:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This job was triggered by a ${{ github.event_name }} event."
-      - run: echo "the host is ${{ runner.os }}, my branch is ${{ github.ref }} on repo ${{ github.repository }}, the workspace ${{ github.workspace }}"
-      - run:  echo "the job status is ${{ job.status }}"
+      - run: echo "This is job one."
+jobs:
+  job-two:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This is job two."
