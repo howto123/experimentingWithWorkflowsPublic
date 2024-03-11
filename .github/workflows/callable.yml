@@ -1,8 +1,8 @@
 name: A callable, reusable workflow
-on:
-  workflow_dispatch:
-
-  push:
+on: [
+  workflow_dispatch,
+  push
+]
 
 jobs:
   somejob:
