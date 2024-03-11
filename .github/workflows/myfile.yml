@@ -11,4 +11,4 @@ on: [push, workflow_dispatch]
 
 jobs:
   job1:
-    uses: ./.github/workflows/callable.yml@main
+    uses: ./.github/workflows/callable.yml
