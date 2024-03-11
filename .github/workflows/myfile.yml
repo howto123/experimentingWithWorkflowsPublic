@@ -10,5 +10,8 @@ on: [push, workflow_dispatch]
 
 
 jobs:
-  job1:
+  calls_workflow_from_the_same_repo:
     uses: ./.github/workflows/callable.yml
+
+  calls_workflow_from_another_repo:
+    uses: howto123/experimentingWithWorkflowsPublic2/.github/workflows/reusable.yml
