@@ -2,7 +2,7 @@ name: MyWorkflowName
 run-name: ${{ github.actor }} is my run-name
 on: [push]
 jobs:
-  the name of the job:
+  the-name-of-the-job:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This job was triggered by a ${{ github.event_name }} event."
