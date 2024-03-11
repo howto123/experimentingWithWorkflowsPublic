@@ -14,4 +14,4 @@ jobs:
     uses: ./.github/workflows/callable.yml
 
   calls_workflow_from_another_repo:
-    uses: howto123/experimentingWithWorkflowsPublic2/.github/workflows/reusable.yml
+    uses: howto123/experimentingWithWorkflowsPublic2/.github/workflows/reusable.yml@main
