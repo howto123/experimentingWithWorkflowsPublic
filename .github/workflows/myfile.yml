@@ -1,6 +1,14 @@
+# useful info here: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+
 name: MyWorkflowName
 run-name: ${{ github.actor }} is my run-name
+
+# here we can write anything from: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
 on: [push]
+
+
+
+
 jobs:
   job-one:
     runs-on: ubuntu-latest
@@ -11,3 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is job two."
+
+  execute-workflow-from-another-file-or-even-repo:
+    uses: hotwo123/experimentingWithWorkflowsPublic/.github/workflows/callable.yml@v1
