@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is job one."
-jobs:
+
   job-two:
     runs-on: ubuntu-latest
     steps:
